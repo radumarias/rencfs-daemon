@@ -1,0 +1,15 @@
+[Unit]
+Description=rencfs-daemon
+After=default.target
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=/home/gnome/dev/RustroverProjects/rencfs/rencfs-daemon/target/debug/rencfs-daemon
+# optional items below
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

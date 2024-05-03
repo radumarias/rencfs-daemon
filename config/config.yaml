@@ -1,0 +1,14 @@
+vaults:
+  - name: vault 1 # must be unique, used to refer to a vault via daemon service communication
+    mount_point: mount-point-path-1 # must be unique, full path, only one vault can be mounted in a location
+    data_dir: data-dir-path-1 # must be unique, full path, only one vault need to save data in a location
+    locked: true # `false` means it will be started (mounted) by the daemon on start. You can use `true` if you just want to keep it in config but not mount it
+    cipher: ChaCha20 # check possible values with `rencfs-daemon --help`
+    derive_key_hash_rounds: 600000 # how many times to hash password to obtain key used to encrypt main encryption key, higher the safer but slower when unlocking vault
+  
+  - name: vault 2 # must be unique, used to refer to a vault via daemon service communication
+    mount_point: mount-point-path-2 # must be unique, full path, only one vault can be mounted in a location
+    data_dir: data-dir-path-2 # must be unique, full path, only one vault need to save data in a location
+    locked: true # `false` means it will be started (mounted) by the daemon on start. You can use `true` if you just want to keep it in config but not mount it
+    cipher: ChaCha20 # check possible values with `rencfs-daemon --help`
+    derive_key_hash_rounds: 600000 # how many times to hash password to obtain key used to encrypt main encryption key, higher the safer but slower when unlocking vault
