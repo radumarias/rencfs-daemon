@@ -1,9 +1,9 @@
 RencFs daemon
 
 > [!WARNING]
-> ***This is very early in development. Please do not use it with sensitive data just yet. Please wait for a
+> **This is very early in development. Please do not use it with sensitive data just yet. Please wait for a
 stable release.
-> It's mostly ideal for experimental and learning projects.***
+> It's mostly ideal for experimental and learning projects.**
 
 An encrypted file system in Rust that mounts with FUSE on Linux. It can be used to create encrypted directories.
 
