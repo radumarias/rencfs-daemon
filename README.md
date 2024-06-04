@@ -5,7 +5,7 @@ RencFs daemon
 stable release.
 > It's mostly ideal for experimental and learning projects.**
 
-An encrypted file system in Rust that mounts with FUSE on Linux. It can be used to create encrypted directories.
+An encrypted file system in Rust that is mounted with FUSE on Linux. It can be used to create encrypted directories.
 
 It uses [rencfs](https://github.com/radumarias/rencfs) and can be installed as a systemd service and configured via YAML files.
 
